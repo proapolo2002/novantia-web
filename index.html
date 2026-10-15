@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NovantIA Digital | Diseño web y marketing digital para negocios locales y pymes</title>
+<meta name="description" content="Consultoría online, diseño web y marketing digital para negocios locales y pymes de España. Más clientes sin complicaciones técnicas. Pide tu consulta.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#060A24">
+<!-- TODO: confirmar el dominio definitivo. Se ha supuesto www.novantiadigital.es a partir del email de contacto. -->
+<link rel="canonical" href="https://www.novantiadigital.es/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="NovantIA Digital">
+<meta property="og:title" content="NovantIA Digital | Diseño web y marketing digital para negocios locales">
+<meta property="og:description" content="Te ayudamos a que te encuentren y te llamen más clientes: consultoría online, diseño web y marketing digital para pymes y negocios locales.">
+<meta property="og:url" content="https://www.novantiadigital.es/">
+<!-- TODO: añadir og:image (1200x630) cuando exista la imagen de marca. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060A24'/%3E%3Crect x='5' y='17' width='5' height='10' fill='%232338FF'/%3E%3Crect x='13' y='11' width='5' height='16' fill='%23FFE83D'/%3E%3Crect x='21' y='5' width='5' height='22' fill='%232338FF'/%3E%3C/svg%3E">
+
+<script>
+/* Se activa el modo "pantallas fijadas" solo si la persona no pide menos movimiento. */
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('js-pin');}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Sans:wght@400;500;600&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.novantiadigital.es/#organization",
+      "name": "NovantIA Digital",
+      "url": "https://www.novantiadigital.es/",
+      "email": "contacto@novantiadigital.es",
+      "telephone": "+34698546713",
+      "areaServed": { "@type": "Country", "name": "España" },
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+34698546713", "contactType": "customer service", "email": "contacto@novantiadigital.es", "areaServed": "ES", "availableLanguage": "es" },
+        { "@type": "ContactPoint", "telephone": "+34652274156", "contactType": "sales", "email": "contacto@novantiadigital.es", "areaServed": "ES", "availableLanguage": "es" }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.novantiadigital.es/#service",
+      "name": "NovantIA Digital",
+      "description": "Consultoría online, diseño web y marketing digital para negocios locales y pymes en España.",
+      "url": "https://www.novantiadigital.es/",
+      "email": "contacto@novantiadigital.es",
+      "telephone": "+34698546713",
+      "address": { "@type": "PostalAddress", "addressCountry": "ES" },
+      "areaServed": { "@type": "Country", "name": "España" },
+      "serviceType": ["Consultoría online", "Diseño web", "Marketing digital"],
+      "parentOrganization": { "@id": "https://www.novantiadigital.es/#organization" }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --abismo:#060A24; --ultramar:#2338FF; --senal:#FFE83D; --hielo:#EAF0FF; --bruma:#A9B4E4; --panel:#0D1442;
+  --linea:rgba(169,180,228,.22);
+  --piel-1:#FFD6B8; --piel-2:#D9965F; --piel-3:#8D5A3B;
+  --error:#FF9A9A;
+  --f-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --f-body:"Instrument Sans",system-ui,sans-serif;
+  /* escala tipográfica, razón 1,333 */
+  --s0:1.0625rem; --s1:1.333rem; --s2:1.777rem; --s3:2.369rem; --s4:3.157rem; --s5:4.209rem; --s6:5.61rem;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --hh:64px;
+  --gut:clamp(20px,5vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--abismo);color:var(--hielo);font:400 var(--s0)/1.6 var(--f-body);overflow-x:clip;-webkit-font-smoothing:antialiased}
+/* grano que da textura a toda la web */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.08;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img,svg{display:block;max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+p{margin:0 0 1em}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;font-stretch:75%;line-height:.96;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(var(--s3),6vw,var(--s5))}
+h3{font-size:clamp(var(--s2),4vw,var(--s4))}
+:focus-visible{outline:3px solid var(--senal);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 2*var(--gut));margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--senal);color:var(--abismo);padding:12px 18px;font-weight:600;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px}
+section{position:relative}
+.ph{background:var(--senal);color:var(--abismo);padding:.05em .45em;border-radius:4px;font-weight:600;font-style:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* utilidades de color para SVG */
+.f-u{fill:var(--ultramar)} .f-s{fill:var(--senal)} .f-a{fill:var(--abismo)} .f-p{fill:var(--panel)} .f-h{fill:var(--hielo)}
+.sk1{fill:var(--piel-1)} .sk2{fill:var(--piel-2)} .sk3{fill:var(--piel-3)}
+.o{stroke:var(--hielo);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.lo{fill:none;stroke:var(--hielo);stroke-width:19;stroke-linecap:round}
+.lf{fill:none;stroke-width:13;stroke-linecap:round}
+.lf-u{stroke:var(--ultramar)} .lf-s{stroke:var(--senal)}
+.ln-a{fill:none;stroke:var(--abismo);stroke-width:3;stroke-linecap:round}
+.ln-h{fill:none;stroke:var(--hielo);stroke-width:3;stroke-linecap:round}
+.t{font-family:var(--f-body);font-weight:600;fill:var(--hielo);font-size:13px}
+.t-d{fill:var(--abismo)}
+.t-lg{font-family:var(--f-display);font-weight:800;font-stretch:75%;font-size:23px}
+
+/* ---------- botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:.8em 1.4em;font:600 1rem/1.1 var(--f-body);
+  color:var(--abismo);background:var(--senal);border:3px solid var(--hielo);border-radius:14px;text-decoration:none;cursor:pointer;
+  box-shadow:5px 5px 0 var(--ultramar);transition:transform .18s var(--ease),box-shadow .18s var(--ease);position:relative}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ultramar)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ultramar)}
+.btn:focus-visible{outline-color:var(--hielo)}
+.btn--sm{min-height:42px;padding:.6em 1.05em;font-size:.95rem;box-shadow:4px 4px 0 var(--ultramar)}
+.btn--ghost{color:var(--hielo);background:linear-gradient(var(--hielo),var(--hielo)) no-repeat 0 100%/100% 0;box-shadow:none;transition:background-size .28s var(--ease),color .28s,transform .18s var(--ease)}
+.btn--ghost:hover{background-size:100% 100%;color:var(--abismo);box-shadow:none}
+.btn--ghost:active{box-shadow:none}
+.btn--ghost:focus-visible{outline-color:var(--senal)}
+.btn svg{width:1.25em;height:1.25em;flex:none;transition:transform .25s var(--ease)}
+.btn:hover svg{transform:rotate(-12deg) scale(1.12)}
+.btn--light{background:var(--hielo);border-color:var(--abismo)}
+.btn[disabled]{opacity:.7;cursor:progress}
+
+/* ---------- cabecera ---------- */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--hh);border-bottom:1px solid transparent;transition:background .3s,border-color .3s;animation:drop .7s var(--ease) both}
+.site-header.is-scrolled{background:rgba(6,10,36,.84);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--linea)}
+.hdr{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-size:1.3rem;line-height:1}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-weight:800;font-stretch:75%;letter-spacing:-.02em}
+.brand i{font-style:normal;font-weight:200;font-stretch:100%;margin-left:.3em}
+.nav{display:none;gap:30px}
+.nav a{position:relative;text-decoration:none;font-weight:500;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--senal);transform:scaleX(0);transform-origin:left;transition:transform .28s var(--ease)}
+.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}
+@media (min-width:920px){.nav{display:flex}}
+@media (max-width:420px){.brand i{display:none}}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh;min-height:100svh;display:grid;align-items:center;padding:calc(var(--hh) + 36px) 0 64px;overflow:hidden;isolation:isolate}
+.hero__glow{position:absolute;z-index:-2;pointer-events:none;border-radius:50%}
+.hero__glow--a{width:min(900px,120vw);aspect-ratio:1;right:-18%;top:-8%;background:radial-gradient(closest-side,rgba(35,56,255,.62),rgba(35,56,255,0))}
+.hero__glow--b{width:min(560px,90vw);aspect-ratio:1;left:-14%;bottom:-18%;background:radial-gradient(closest-side,rgba(35,56,255,.34),rgba(35,56,255,0))}
+.hero__grid{position:absolute;z-index:-1;left:-20%;right:-20%;bottom:0;height:58%;pointer-events:none;
+  background-image:linear-gradient(rgba(169,180,228,.28) 1px,transparent 1px),linear-gradient(90deg,rgba(169,180,228,.28) 1px,transparent 1px);
+  background-size:64px 64px;transform:perspective(520px) rotateX(64deg);transform-origin:50% 100%;
+  -webkit-mask-image:linear-gradient(to top,#000 5%,transparent 88%);mask-image:linear-gradient(to top,#000 5%,transparent 88%);
+  animation:grid-on 1.4s ease-out both}
+.hero__in{display:grid;gap:clamp(24px,4vw,56px);align-items:center}
+@media (min-width:900px){.hero__in{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+.hero h1{font-size:clamp(2.6rem,5.6vw + .7rem,4.75rem);line-height:.92;letter-spacing:-.025em;margin-bottom:.32em}
+.ln{display:block;overflow:hidden;padding-bottom:.07em;margin-bottom:-.07em}
+.ln>span{display:block;animation:line-in .9s var(--ease) both;animation-delay:calc(.3s + var(--i)*.11s)}
+.hero__lead{max-width:46ch;font-size:clamp(1.05rem,1.2vw + .7rem,1.3rem);line-height:1.5;animation:rise .8s var(--ease) both;animation-delay:.85s}
+.hero__cta{display:flex;flex-wrap:wrap;gap:16px 18px;margin:28px 0 22px;animation:rise .8s var(--ease) both;animation-delay:1s}
+.hero__tel{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 26px;color:var(--bruma);animation:rise .8s var(--ease) both;animation-delay:1.15s}
+.hero__tel a{color:var(--hielo);font-weight:600;text-underline-offset:4px;text-decoration-thickness:2px}
+.hero__tel a:hover{color:var(--senal)}
+.hero-art{width:min(100%,560px);margin-inline:auto;overflow:visible}
+@media (min-width:900px){.hero-art{margin-inline:0 auto}}
+/* secuencia de entrada del hero */
+.art-orbit{transform-box:view-box;transform-origin:300px 300px;animation:spin 90s linear infinite}
+.geo{animation:rise .8s var(--ease) both;animation-delay:.6s}
+.shop-body{animation:rise .8s var(--ease) both;animation-delay:.45s}
+.bar{transform-box:fill-box;transform-origin:50% 100%;animation:grow .75s var(--ease) both;animation-delay:calc(.75s + var(--i)*.09s)}
+.enter-phone{animation:drop-art .9s var(--ease) both;animation-delay:1.25s}
+.enter-char{animation:rise .8s var(--ease) both;animation-delay:1.5s}
+.enter-pill{animation:pop .6s var(--ease) both;animation-delay:var(--d)}
+.bob{animation:bob 5s ease-in-out infinite alternate}
+.bob--2{animation-duration:6.4s;animation-delay:-2s}
+.breathe{animation:breathe 4s ease-in-out infinite alternate}
+.arm{transform-box:fill-box;transform-origin:0 100%;animation:wave 3.2s ease-in-out infinite alternate}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+@keyframes drop{from{opacity:0;transform:translateY(-100%)}}
+@keyframes drop-art{from{opacity:0;transform:translateY(-70px)}}
+@keyframes line-in{from{transform:translateY(105%)}}
+@keyframes grid-on{from{opacity:0}}
+@keyframes grow{from{transform:scaleY(0)}}
+@keyframes pop{from{opacity:0;transform:scale(.6) translateY(16px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{from{transform:translateY(-7px)}to{transform:translateY(8px)}}
+@keyframes breathe{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@keyframes wave{from{transform:rotate(-5deg)}to{transform:rotate(7deg)}}
+
+/* ---------- ticket / barra de confianza ---------- */
+.trust{padding:clamp(56px,9vw,120px) 0}
+.trust__grid{display:grid;gap:clamp(36px,6vw,80px);align-items:center}
+@media (min-width:900px){.trust__grid{grid-template-columns:minmax(0,1fr) 420px;justify-content:space-between}}
+.trust__copy p{max-width:44ch;color:var(--bruma);font-size:1.15rem;margin-top:1.1em}
+.ticket{position:relative;background:var(--hielo);color:var(--abismo);padding:28px 26px 30px;max-width:420px;width:100%;transform:rotate(-1.6deg);box-shadow:10px 10px 0 var(--ultramar);margin-bottom:16px}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-16px;height:16px;
+  background:linear-gradient(-45deg,transparent 8px,var(--hielo) 0) 0 0/16px 16px,linear-gradient(45deg,transparent 8px,var(--hielo) 0) 0 0/16px 16px}
+.ticket__head{font:600 .95rem/1.4 var(--f-body);text-align:center;border-bottom:2px dashed rgba(6,10,36,.4);padding-bottom:16px;margin-bottom:12px}
+.ticket__head strong{display:block;font:800 1.9rem/1 var(--f-display);font-stretch:75%;letter-spacing:-.02em;margin-bottom:.2em}
+.ticket dl{margin:0}
+.t-row{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+.t-row dt{display:flex;flex:1;align-items:baseline;gap:8px;font-weight:500;min-width:0}
+.t-row dt::after{content:"";flex:1;border-bottom:2px dotted rgba(6,10,36,.45);transform:translateY(-4px);min-width:16px}
+.t-row dd{margin:0;font-family:var(--f-display);font-weight:200;font-size:2.1rem;line-height:1;font-variant-numeric:tabular-nums;text-align:right}
+.t-row dd .ph{font-family:var(--f-body);font-weight:600;font-size:.82rem;letter-spacing:0}
+.ticket__foot{margin-top:14px;padding-top:16px;border-top:2px dashed rgba(6,10,36,.4);text-align:center;font-weight:600;font-size:.9rem}
+.ticket__bars{height:38px;margin-top:12px;background:repeating-linear-gradient(90deg,var(--abismo) 0 2px,transparent 2px 5px,var(--abismo) 5px 6px,transparent 6px 10px,var(--abismo) 10px 13px,transparent 13px 15px)}
+.js-print .t-row,.js-print .ticket__foot{clip-path:inset(0 0 100% 0)}
+.js-print.is-printing .t-row,.js-print.is-printing .ticket__foot{animation:print .5s steps(8,end) both;animation-delay:calc(var(--i)*.28s + .2s)}
+@keyframes print{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 -2px 0)}}
+
+/* ---------- servicios ---------- */
+.services{padding-top:clamp(48px,8vw,100px)}
+.svc-intro{margin-bottom:clamp(28px,5vw,56px)}
+.svc-intro h2{max-width:16ch}
+.svc-intro p{max-width:48ch;color:var(--bruma);font-size:1.15rem;margin-top:1.1em}
+.svc-track{--phone-w:240px;--svc-gap:clamp(24px,6vw,96px);position:relative}
+.svc-stage{width:min(1240px,100%);margin-inline:auto;padding-inline:var(--gut)}
+.phone-frame{display:none}
+.svc-nav{display:none}
+/* modo estático (sin JS o con movimiento reducido): cada servicio con su pantalla */
+.svc{display:grid;gap:28px;padding-block:44px;border-top:1px solid var(--linea);align-items:center}
+@media (min-width:800px){.svc{grid-template-columns:minmax(0,1fr) 270px;gap:var(--svc-gap)}.svc:nth-child(even) .svc-screen{order:-1}.svc:nth-child(even){grid-template-columns:270px minmax(0,1fr)}}
+.svc-screen{width:min(240px,72vw);aspect-ratio:9/18;border:10px solid var(--abismo);border-radius:38px;box-shadow:0 0 0 3px var(--hielo),9px 9px 0 3px var(--senal);overflow:hidden;background:var(--panel);justify-self:start}
+@media (min-width:800px){.svc-screen{justify-self:center}}
+.svc-screen svg{width:100%;height:100%}
+.svc-copy h3{margin-bottom:.45em}
+.svc-benefit{font-size:1.2rem;line-height:1.5;max-width:42ch;margin-bottom:1em}
+.svc-list{list-style:none;margin:0 0 1.4em;padding:0;display:grid;gap:8px;max-width:42ch;color:var(--bruma)}
+.svc-list li{position:relative;padding-left:26px}
+.svc-list li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:10px;background:var(--senal);transform:rotate(45deg)}
+/* modo fijado: el móvil queda quieto y las pantallas cambian al hacer scroll */
+.js-pin .svc-track{--phone-w:min(clamp(240px,24vw,330px),calc((100vh - var(--hh) - 96px)/2));height:calc(var(--n)*85vh + 100vh);height:calc(var(--n)*85svh + 100svh);background:radial-gradient(60% 40% at 78% 50%,rgba(35,56,255,.42),rgba(35,56,255,0))}
+.js-pin .svc-stage{position:sticky;top:0;height:100vh;height:100svh;display:grid;grid-template-columns:minmax(0,1fr) var(--phone-w);column-gap:var(--svc-gap);align-content:center;padding-top:calc(var(--hh) + 16px);padding-bottom:64px}
+.js-pin .phone-frame{display:block;grid-column:2;grid-row:1;justify-self:center;align-self:center;width:var(--phone-w);aspect-ratio:9/18;border:10px solid var(--abismo);border-radius:38px;box-shadow:0 0 0 3px var(--hielo),9px 9px 0 3px var(--senal);z-index:20;pointer-events:none}
+.js-pin .phone-frame::before{content:"";position:absolute;left:50%;top:-3px;width:34%;height:15px;transform:translateX(-50%);background:var(--abismo);border-radius:0 0 12px 12px;box-shadow:0 0 0 3px var(--hielo);clip-path:inset(3px -3px -3px -3px)}
+.js-pin .svc{position:absolute;inset:calc(var(--hh) + 16px) var(--gut) 64px;display:grid;grid-template-columns:minmax(0,1fr) var(--phone-w);column-gap:var(--svc-gap);align-content:center;align-items:center;padding:0;border:0;gap:0 var(--svc-gap);pointer-events:none}
+.js-pin .svc-screen{grid-column:2;grid-row:1;justify-self:center;width:var(--phone-w);border:0;box-shadow:none;border-radius:38px;order:0;
+  clip-path:inset(100% 0 0 0 round 38px);transition:clip-path .85s var(--ease);z-index:calc(var(--k) + 1)}
+.js-pin .svc.is-revealed .svc-screen{clip-path:inset(0 round 38px)}
+.js-pin .svc-copy{grid-column:1;grid-row:1;opacity:0;transform:translateX(-30px);transition:opacity .45s,transform .7s var(--ease)}
+.js-pin .svc.is-active .svc-copy{opacity:1;transform:none;pointer-events:auto}
+.js-pin .svc-copy h3{font-size:clamp(var(--s3),5vw,var(--s5))}
+.js-pin .svc-nav{display:flex;gap:12px;position:absolute;left:var(--gut);right:var(--gut);bottom:18px;z-index:30}
+.svc-nav button{flex:1;position:relative;background:none;border:0;color:var(--bruma);font:600 .95rem/1.2 var(--f-body);text-align:left;padding:12px 0 0;cursor:pointer;transition:color .2s}
+.svc-nav button::before,.svc-nav button::after{content:"";position:absolute;left:0;right:0;top:0;height:4px}
+.svc-nav button::before{background:var(--linea)}
+.svc-nav button::after{background:var(--senal);transform:scaleX(var(--f,0));transform-origin:left}
+.svc-nav button[aria-current="true"]{color:var(--hielo)}
+.svc-nav button:hover{color:var(--hielo)}
+@media (max-width:759px){
+  .js-pin .svc-track{--phone-w:min(34vw,150px,calc((100vh - var(--hh) - 330px)/2))}
+  .js-pin .svc-stage{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);align-content:start;padding-top:calc(var(--hh) + 14px)}
+  .js-pin .svc{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);align-content:start;align-items:start;inset:calc(var(--hh) + 14px) var(--gut) 64px}
+  .js-pin .phone-frame{grid-column:1}
+  .js-pin .svc-screen{grid-column:1}
+  .js-pin .svc-copy{grid-column:1;grid-row:2;padding-top:22px;transform:translateY(18px)}
+  .js-pin .svc-copy h3{font-size:var(--s3)}
+  .js-pin .svc-benefit{font-size:1rem;margin-bottom:.8em}
+  .js-pin .svc-list{display:none}
+  .js-pin .svc-track{background:radial-gradient(70% 30% at 50% 24%,rgba(35,56,255,.42),rgba(35,56,255,0))}
+}
+/* animaciones dentro de las pantallas (solo cuando la pantalla está activa) */
+.js-pin .svc.is-active .in{animation:in .6s var(--ease) both;animation-delay:calc(var(--d,0)*1s + .25s)}
+.js-pin .svc.is-active .draw{animation:draw 1.5s var(--ease) both;animation-delay:.9s}
+.js-pin .svc.is-active .ring{animation:ring 1.8s ease-out infinite}
+.js-pin .svc.is-active .tap{animation:tap 2.6s var(--ease) both;animation-delay:1.1s}
+.js-pin .svc.is-active .cursor{animation:cursor 2s var(--ease) both;animation-delay:1.1s}
+.in{transform-box:fill-box}
+.draw{stroke-dasharray:400}
+.wave rect{transform-box:fill-box;transform-origin:50% 50%;animation:wv 1s ease-in-out infinite alternate;animation-delay:calc(var(--i)*-.14s)}
+.ring{transform-box:fill-box;transform-origin:50% 50%}
+.cursor{transform:translate(78px,214px)}
+@keyframes in{from{opacity:0;transform:translateY(16px)}}
+@keyframes draw{from{stroke-dashoffset:400}}
+@keyframes ring{from{transform:scale(1);opacity:.9}to{transform:scale(1.7);opacity:0}}
+@keyframes wv{from{transform:scaleY(.25)}to{transform:scaleY(1)}}
+@keyframes cursor{from{transform:translate(220px,360px)}to{transform:translate(78px,214px)}}
+@keyframes tap{0%,40%{transform:scale(1)}55%{transform:scale(.92)}70%,100%{transform:scale(1)}}
+
+/* ---------- método ---------- */
+.process{padding:clamp(90px,13vw,190px) 0;background:var(--panel);clip-path:polygon(0 clamp(24px,4vw,60px),100% 0,100% calc(100% - clamp(24px,4vw,60px)),0 100%);margin-block:clamp(-30px,-3vw,-10px)}
+.proc{display:grid;gap:clamp(36px,6vw,90px)}
+@media (min-width:920px){.proc{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}.proc__side{position:sticky;top:110px;align-self:start}}
+.proc__side p{color:var(--bruma);max-width:36ch;margin-top:1em;font-size:1.1rem}
+.duo{width:min(100%,380px);margin-top:28px}
+.steps{list-style:none;margin:0;padding:0 0 0 44px;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;left:8px;top:14px;bottom:14px;border-left:3px dashed rgba(169,180,228,.5)}
+.step{position:relative;padding:6px 0 clamp(36px,6vw,64px)}
+@media (min-width:920px){.step:nth-child(even){margin-left:clamp(0px,5vw,70px)}}
+.step::before{content:"";position:absolute;left:-44px;top:12px;width:20px;height:20px;background:var(--senal);border:3px solid var(--hielo);transform:rotate(45deg);transition:transform .45s var(--ease),background .3s}
+.step:hover::before{transform:rotate(135deg) scale(1.25);background:var(--ultramar)}
+.step__n{display:block;font-family:var(--f-display);font-weight:200;font-size:clamp(4rem,9vw,6.5rem);line-height:.8;color:var(--hielo);margin-bottom:.12em;font-variant-numeric:tabular-nums}
+.step h3{margin-bottom:.4em}
+.step p{max-width:44ch;color:var(--bruma);font-size:1.1rem;margin:0}
+.step:last-child{padding-bottom:0}
+
+/* ---------- casos ---------- */
+.cases{padding:clamp(90px,12vw,170px) 0 clamp(70px,9vw,120px)}
+.cases__head{max-width:640px;margin-bottom:clamp(28px,5vw,56px)}
+.cases__head p{color:var(--bruma);font-size:1.1rem;margin-top:1em}
+.cases__grid{display:grid;gap:clamp(24px,4vw,44px)}
+@media (min-width:860px){.cases__grid{grid-template-columns:7fr 5fr;grid-template-areas:"web mob" "web card";align-items:start}}
+.case{margin:0;transition:transform .3s var(--ease)}
+.case:hover{transform:translate(-4px,-4px)}
+.case--web{grid-area:web}.case--mob{grid-area:mob}.case--card{grid-area:card}
+.frame{position:relative;border:3px solid var(--hielo);background:var(--panel);box-shadow:8px 8px 0 var(--ultramar);transition:box-shadow .3s var(--ease);overflow:hidden}
+.case:hover .frame{box-shadow:14px 14px 0 var(--senal)}
+.frame--web{border-radius:16px;aspect-ratio:16/11}
+.frame--web::before{content:"";display:block;height:34px;border-bottom:3px solid var(--hielo);background:radial-gradient(circle at 18px 50%,var(--senal) 5px,transparent 6px),radial-gradient(circle at 40px 50%,var(--hielo) 5px,transparent 6px),radial-gradient(circle at 62px 50%,var(--ultramar) 5px,transparent 6px),var(--abismo)}
+.frame--mob{width:min(240px,70%);aspect-ratio:9/16;border-radius:34px;margin-inline:clamp(0px,4vw,56px) 0}
+.frame--card{aspect-ratio:1;border-radius:6px 28px 6px 28px;max-width:300px}
+@media (min-width:860px){.case--card{margin-left:clamp(0px,9vw,130px)}}
+.frame__ph{position:absolute;inset:0;display:grid;place-content:center;gap:6px;padding:16px;text-align:center;font-weight:600;color:var(--bruma);
+  background:repeating-linear-gradient(135deg,rgba(35,56,255,.22) 0 14px,transparent 14px 28px)}
+.frame--web .frame__ph{top:34px}
+.case figcaption{margin-top:18px;max-width:40ch;color:var(--bruma)}
+.case figcaption strong{display:block;color:var(--hielo);font-family:var(--f-display);font-size:1.4rem;font-stretch:75%;font-weight:800;margin-bottom:.2em}
+
+/* ---------- preguntas (conversación) ---------- */
+.faq{padding:clamp(80px,11vw,150px) 0;background:var(--panel)}
+.faq__in{display:grid;gap:clamp(32px,6vw,80px)}
+@media (min-width:920px){.faq__in{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}.faq__side{position:sticky;top:110px;align-self:start}}
+.faq__side p{color:var(--bruma);max-width:34ch;margin:1em 0 1.6em}
+.chat{display:grid;gap:18px}
+.qa{display:grid;gap:10px}
+.qa summary{list-style:none;cursor:pointer;justify-self:end;max-width:min(92%,520px);background:var(--ultramar);color:var(--hielo);padding:14px 20px;border-radius:22px 22px 4px 22px;font-weight:600;display:flex;gap:14px;align-items:center;transition:transform .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 0 0 0 var(--senal)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{transform:translateX(-4px);box-shadow:5px 5px 0 var(--senal)}
+.qa .plus{flex:none;width:18px;height:18px;position:relative}
+.qa .plus::before,.qa .plus::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;margin-top:-1.5px;background:var(--senal);transition:transform .3s var(--ease)}
+.qa .plus::after{transform:rotate(90deg)}
+.qa[open] .plus::after{transform:rotate(0)}
+.qa .reply{justify-self:start;max-width:min(94%,560px);background:var(--abismo);border:3px solid var(--hielo);padding:16px 20px;border-radius:22px 22px 22px 4px;transform-origin:0 100%}
+.qa[open] .reply{animation:pop-reply .45s var(--ease) both}
+.qa .reply p:last-child{margin:0}
+@keyframes pop-reply{from{opacity:0;transform:scale(.85) translateY(10px)}}
+
+/* ---------- contacto / formulario ---------- */
+.contact{padding:clamp(90px,12vw,170px) 0;overflow:hidden;isolation:isolate}
+.contact::before{content:"";position:absolute;z-index:-1;width:min(1000px,140vw);aspect-ratio:1;left:-20%;top:0;background:radial-gradient(closest-side,rgba(35,56,255,.5),rgba(35,56,255,0));pointer-events:none}
+.contact__grid{display:grid;gap:clamp(40px,6vw,88px)}
+@media (min-width:960px){.contact__grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start}}
+.contact__info p.lead{font-size:1.2rem;max-width:36ch;margin-top:1em}
+.vias{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:16px}
+.vias li{display:grid;gap:2px}
+.vias span{color:var(--bruma);font-size:.95rem}
+.vias a.big{font-family:var(--f-display);font-weight:800;font-stretch:75%;font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.05;letter-spacing:-.01em;text-decoration:none;width:fit-content;background:linear-gradient(var(--senal),var(--senal)) 0 100%/0 4px no-repeat;transition:background-size .3s var(--ease),color .2s}
+.vias a.big:hover{background-size:100% 4px;color:var(--senal)}
+.vias a.mail{font-size:1.2rem;font-weight:600;text-underline-offset:4px;text-decoration-thickness:2px}
+.vias .wa-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.talk{width:min(100%,360px);margin-top:30px}
+.form{background:rgba(13,20,66,.86);border:3px solid var(--hielo);padding:clamp(22px,4vw,40px);border-radius:6px 30px 6px 30px;box-shadow:10px 10px 0 var(--senal);position:relative}
+.form h3{font-size:var(--s3);margin-bottom:.3em}
+.form>p{color:var(--bruma);margin-bottom:1.4em}
+.field{margin-bottom:20px}
+.field label,.field .lbl{display:block;font-weight:600;margin-bottom:6px}
+.field .opt{font-weight:400;color:var(--bruma)}
+.field input[type=text],.field input[type=email],.field input[type=tel],.field textarea{width:100%;font:400 1.05rem/1.4 var(--f-body);color:var(--hielo);background:var(--abismo);border:3px solid rgba(234,240,255,.55);border-radius:10px;padding:13px 14px;transition:border-color .2s,box-shadow .2s}
+.field textarea{min-height:130px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--bruma);opacity:1}
+.field input:hover,.field textarea:hover{border-color:var(--hielo)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--senal);box-shadow:0 0 0 4px rgba(255,232,61,.28)}
+.field [aria-invalid="true"]{border-color:var(--error)}
+.field [data-ok="true"]{border-color:var(--senal)}
+.err{margin:6px 0 0;min-height:0;color:var(--error);font-size:.95rem;font-weight:500;display:none;gap:8px;align-items:flex-start}
+.err.is-on{display:flex}
+.err::before{content:"!";flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--error);color:var(--abismo);font-weight:800;font-size:.8rem;margin-top:1px}
+.count-c{display:block;text-align:right;color:var(--bruma);font-size:.85rem;margin-top:4px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.check{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;cursor:pointer}
+.check input{position:absolute;opacity:0;width:28px;height:28px;margin:0;cursor:pointer}
+.check .box{width:28px;height:28px;border:3px solid var(--hielo);border-radius:8px;background:var(--abismo);display:grid;place-items:center;transition:background .2s,transform .2s var(--ease)}
+.check .box svg{width:18px;height:18px;stroke:var(--abismo);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .25s var(--ease)}
+.check input:checked+.box{background:var(--senal)}
+.check input:checked+.box svg{stroke-dashoffset:0}
+.check input:focus-visible+.box{outline:3px solid var(--senal);outline-offset:3px}
+.check input[aria-invalid="true"]+.box{border-color:var(--error)}
+.check:hover .box{transform:scale(1.06)}
+.check .txt{font-size:.98rem;line-height:1.45}
+.check .txt a{text-underline-offset:3px}
+.form .btn{width:100%;margin-top:6px}
+.form .btn .spin{display:none;width:18px;height:18px;border:3px solid var(--abismo);border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite}
+.form .btn.is-loading .spin{display:block}
+.form-msg{margin-top:16px;font-weight:500;display:none;padding:14px 16px;border-radius:10px;border:3px solid var(--hielo)}
+.form-msg.is-on{display:block}
+.form-msg.is-bad{border-color:var(--error);color:var(--hielo)}
+.form-msg a{font-weight:600}
+.form-ok{display:none;text-align:left}
+.form.is-sent .form-ok{display:block}
+.form.is-sent .form-fields{display:none}
+.form-ok h3{margin-bottom:.4em}
+
+/* ---------- pie ---------- */
+.foot{background:#030618;padding:clamp(56px,8vw,96px) 0 28px;border-top:1px solid var(--linea)}
+.foot__top{display:grid;gap:36px}
+@media (min-width:860px){.foot__top{grid-template-columns:1.2fr 1fr 1fr}}
+.foot h2{font:600 1rem/1.3 var(--f-body);font-stretch:100%;letter-spacing:0;color:var(--bruma);margin-bottom:12px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a,.foot .linkbtn{color:var(--hielo);text-underline-offset:4px;text-decoration-thickness:2px}
+.foot a:hover,.foot .linkbtn:hover{color:var(--senal)}
+.linkbtn{background:none;border:0;padding:0;font:inherit;cursor:pointer;text-decoration:underline}
+.foot__tag{max-width:30ch;color:var(--bruma);margin-top:14px}
+.foot__bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--linea);display:flex;flex-wrap:wrap;gap:8px 28px;color:var(--bruma);font-size:.92rem}
+
+/* ---------- legal y cookies ---------- */
+dialog.legal{padding:0;border:3px solid var(--hielo);background:var(--panel);color:var(--hielo);width:min(780px,94vw);max-height:88vh;border-radius:6px 28px 6px 28px;box-shadow:10px 10px 0 var(--senal);overflow:hidden}
+dialog.legal::backdrop{background:rgba(3,6,24,.82)}
+.legal__box{max-height:88vh;overflow:auto;padding:clamp(22px,4vw,44px);overscroll-behavior:contain}
+.legal__bar{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}
+.legal h2{font-size:clamp(var(--s2),5vw,var(--s4))}
+.legal h3{font:800 1.25rem/1.2 var(--f-display);font-stretch:75%;margin:1.6em 0 .4em;letter-spacing:0}
+.legal p,.legal li{max-width:68ch}
+.legal ul{padding-left:1.2em}
+.legal .warn{background:var(--abismo);border:3px solid var(--senal);padding:12px 16px;border-radius:8px;font-weight:500;margin-bottom:1.2em}
+.legal table{width:100%;border-collapse:collapse;font-size:.95rem;margin:.6em 0 1em}
+.legal th,.legal td{border:2px solid var(--linea);padding:8px 10px;text-align:left;vertical-align:top}
+.legal th{background:var(--abismo)}
+.x{flex:none;width:46px;height:46px;border-radius:12px;border:3px solid var(--hielo);background:var(--abismo);color:var(--hielo);cursor:pointer;display:grid;place-items:center;transition:transform .2s var(--ease),background .2s}
+.x:hover{background:var(--senal);color:var(--abismo);transform:rotate(90deg)}
+.x svg{width:20px;height:20px;stroke:currentColor;stroke-width:3.5;stroke-linecap:round}
+.cookie{position:fixed;z-index:90;left:16px;right:16px;bottom:16px;max-width:620px;background:var(--panel);border:3px solid var(--hielo);border-radius:6px 24px 6px 24px;box-shadow:8px 8px 0 var(--ultramar);padding:20px 22px}
+@media (min-width:700px){.cookie{left:24px;right:auto;bottom:24px}}
+.cookie[hidden]{display:none}
+.cookie h2{font:800 1.5rem/1 var(--f-display);font-stretch:75%;margin-bottom:.4em}
+.cookie p{font-size:.98rem;margin:0 0 14px;color:var(--hielo)}
+.cookie p a{text-underline-offset:3px}
+.cookie__opts{display:grid;gap:10px;margin-bottom:14px}
+.cookie__opts[hidden]{display:none}
+.tog{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+.tog input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--senal);flex:none}
+.tog small{display:block;color:var(--bruma)}
+.cookie__btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.cookie__btns .btn{flex:1 1 150px;box-shadow:none}
+.cookie__btns .btn:hover{box-shadow:none;transform:translateY(-2px)}
+.cookie__btns .btn:active{transform:none}
+.cookie__btns .linkbtn{font-weight:600;padding:8px 4px}
+@media (max-width:699px){
+  .cookie{padding:16px 16px 14px;left:12px;right:12px;bottom:12px}
+  .cookie h2{font-size:1.25rem}
+  .cookie p{font-size:.9rem;margin-bottom:12px}
+  .cookie__btns .btn{flex:1 1 120px;min-height:40px;padding:.5em .8em}
+}
+
+/* ---------- movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Definiciones SVG compartidas: personajes, degradados y recortes -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2338FF" stop-opacity=".75"/><stop offset="1" stop-color="#2338FF" stop-opacity="0"/></radialGradient>
+    <clipPath id="avclip"><circle cx="135" cy="150" r="45"/></clipPath>
+
+    <!-- Panadera -->
+    <symbol id="c-pan" viewBox="0 0 150 270">
+      <g transform="translate(6 6)" class="f-s"><circle cx="60" cy="60" r="30"/><path d="M22 112 Q60 96 98 112 L110 216 L10 216 Z"/></g>
+      <rect x="30" y="214" width="24" height="44" rx="8" class="o f-a"/><rect x="68" y="214" width="24" height="44" rx="8" class="o f-a"/>
+      <ellipse cx="40" cy="262" rx="20" ry="9" class="o f-h"/><ellipse cx="80" cy="262" rx="20" ry="9" class="o f-h"/>
+      <path d="M26 124 Q8 160 16 194" class="lo"/><path d="M26 124 Q8 160 16 194" class="lf lf-u"/><circle cx="16" cy="199" r="9" class="o sk1"/>
+      <path d="M22 112 Q60 96 98 112 L110 216 L10 216 Z" class="o f-u"/>
+      <path d="M40 132 H80 L86 216 H34 Z" class="o f-h"/><path d="M44 132 L52 112 M76 132 L68 112" class="ln-h"/>
+      <circle cx="60" cy="24" r="14" class="o f-a"/>
+      <circle cx="60" cy="60" r="30" class="o sk1"/>
+      <path d="M32 54 Q34 28 60 28 Q86 28 88 54 Q74 40 60 42 Q46 40 32 54Z" class="o f-a"/>
+      <path d="M34 46 Q60 33 86 46" fill="none" stroke="#FFE83D" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="49" cy="64" r="3" class="f-a"/><circle cx="71" cy="64" r="3" class="f-a"/><path d="M50 76 Q60 85 70 76" class="ln-a"/>
+      <path d="M96 124 Q126 118 132 86" class="lo"/><path d="M96 124 Q126 118 132 86" class="lf lf-u"/>
+      <rect x="118" y="34" width="30" height="50" rx="8" class="o f-a"/><rect x="123" y="42" width="20" height="34" rx="4" class="f-p"/><circle cx="133" cy="52" r="4" class="f-s"/>
+      <circle cx="132" cy="88" r="9" class="o sk1"/>
+    </symbol>
+
+    <!-- Peluquero -->
+    <symbol id="c-pel" viewBox="0 0 150 270">
+      <g transform="translate(6 6)" class="f-s"><circle cx="75" cy="58" r="28"/><path d="M30 112 Q75 94 120 112 L128 216 L22 216 Z"/></g>
+      <rect x="34" y="214" width="26" height="44" rx="8" class="o f-a"/><rect x="82" y="214" width="26" height="44" rx="8" class="o f-a"/>
+      <ellipse cx="46" cy="262" rx="21" ry="9" class="o f-h"/><ellipse cx="96" cy="262" rx="21" ry="9" class="o f-h"/>
+      <path d="M32 124 Q6 118 12 88" class="lo"/><path d="M32 124 Q6 118 12 88" class="lf lf-s"/>
+      <path d="M3 58 L21 80 M21 58 L3 80" class="ln-h"/><circle cx="12" cy="84" r="9" class="o sk2"/>
+      <path d="M30 112 Q75 94 120 112 L128 216 L22 216 Z" class="o f-s"/><path d="M75 104 V216" class="ln-a"/>
+      <path d="M118 126 Q144 130 140 104" class="lo"/><path d="M118 126 Q144 130 140 104" class="lf lf-s"/>
+      <rect x="124" y="54" width="24" height="44" rx="7" class="o f-a"/><rect x="128" y="61" width="16" height="30" rx="3" class="f-p"/><circle cx="136" cy="70" r="3.5" class="f-s"/>
+      <circle cx="139" cy="102" r="9" class="o sk2"/>
+      <circle cx="75" cy="58" r="28" class="o sk2"/>
+      <path d="M44 52 Q40 22 78 24 Q108 26 106 52 Q96 36 74 36 Q58 36 44 52Z" class="o f-a"/>
+      <circle cx="65" cy="62" r="3" class="f-a"/><circle cx="87" cy="62" r="3" class="f-a"/><path d="M66 74 Q76 83 86 74" class="ln-a"/>
+    </symbol>
+
+    <!-- Ferretero -->
+    <symbol id="c-fer" viewBox="0 0 150 270">
+      <g transform="translate(6 6)" class="f-s"><circle cx="75" cy="62" r="30"/><path d="M26 112 Q75 94 124 112 L132 216 L18 216 Z"/></g>
+      <rect x="32" y="214" width="28" height="44" rx="8" class="o f-u"/><rect x="84" y="214" width="28" height="44" rx="8" class="o f-u"/>
+      <ellipse cx="44" cy="262" rx="22" ry="9" class="o f-a"/><ellipse cx="98" cy="262" rx="22" ry="9" class="o f-a"/>
+      <path d="M30 124 Q10 160 18 196" class="lo"/><path d="M30 124 Q10 160 18 196" class="lf lf-s"/>
+      <rect x="9" y="198" width="9" height="52" rx="3" class="o f-h"/><circle cx="13" cy="196" r="11" class="o f-h"/><rect x="10" y="184" width="6" height="10" class="f-a"/>
+      <circle cx="19" cy="200" r="9" class="o sk1"/>
+      <path d="M26 112 Q75 94 124 112 L132 216 L18 216 Z" class="o f-u"/>
+      <rect x="52" y="132" width="46" height="52" rx="6" class="o f-s"/><path d="M54 132 L44 106 M96 132 L106 106" class="ln-h"/>
+      <path d="M120 124 Q146 118 140 84" class="lo"/><path d="M120 124 Q146 118 140 84" class="lf lf-s"/>
+      <circle cx="140" cy="80" r="9" class="o sk1"/>
+      <circle cx="75" cy="62" r="30" class="o sk1"/>
+      <path d="M45 54 Q48 24 76 24 Q104 24 105 54 Z" class="o f-s"/><rect x="92" y="46" width="36" height="9" rx="4" class="o f-s"/>
+      <circle cx="62" cy="64" r="3" class="f-a"/><circle cx="88" cy="64" r="3" class="f-a"/>
+      <path d="M58 76 Q66 70 75 76 Q84 70 92 76 Q84 84 75 79 Q66 84 58 76Z" class="f-a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="cabecera">
+  <div class="wrap hdr">
+    <a class="brand" href="#inicio" aria-label="NovantIA Digital, ir al inicio">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0D1442" stroke="#EAF0FF" stroke-width="2.5"/><rect x="6" y="19" width="5.5" height="9" fill="#2338FF" stroke="#EAF0FF" stroke-width="2"/><rect x="14.25" y="13" width="5.5" height="15" fill="#FFE83D" stroke="#EAF0FF" stroke-width="2"/><rect x="22.5" y="6" width="5.5" height="22" fill="#2338FF" stroke="#EAF0FF" stroke-width="2"/></svg>
+      <span><b>NovantIA</b><i>Digital</i></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#casos">Proyectos</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn--sm" href="#contacto">Pide tu consulta</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- 2. HERO -->
+<section class="hero" id="inicio" aria-labelledby="h1">
+  <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <h1 id="h1"><span class="ln"><span style="--i:0">Más clientes para</span></span> <span class="ln"><span style="--i:1">tu negocio local,</span></span> <span class="ln"><span style="--i:2">sin complicarte</span></span> <span class="ln"><span style="--i:3">con lo digital</span></span></h1>
+      <p class="hero__lead">Somos NovantIA Digital. Diseñamos tu web, ordenamos tu marketing y te acompañamos paso a paso, sin tecnicismos, para que te encuentren y te llamen más personas de tu zona.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#contacto">Pide tu consulta</a>
+        <a class="btn btn--ghost" href="https://wa.me/34698546713?text=Hola%2C%20quiero%20pedir%20una%20consulta%20con%20NovantIA%20Digital." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.3 18.7L4 20z"/></svg>
+          Escríbenos por WhatsApp<span class="sr"> (se abre en una pestaña nueva)</span>
+        </a>
+      </div>
+      <ul class="hero__tel">
+        <li>O llama: <a href="tel:+34698546713">+34 698 54 67 13</a></li>
+        <li><a href="tel:+34652274156">+34 652 27 41 56</a></li>
+      </ul>
+    </div>
+
+    <svg class="hero-art" viewBox="0 0 600 620" role="img" aria-label="Ilustración: una panadera sonríe frente a su tienda mientras mira su móvil. El toldo de la tienda son las barras de un gráfico que sube, y sobre ella flota un móvil con un gráfico creciente y avisos de nuevos clientes.">
+      <g class="art-orbit" aria-hidden="true"><circle cx="300" cy="300" r="262" fill="none" stroke="#A9B4E4" stroke-opacity=".32" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round"/></g>
+      <g class="geo" aria-hidden="true">
+        <path d="M44 110 l22 38 h-44z" fill="none" class="o"/>
+        <path d="M548 470 l12 12 -12 12 -12 -12z" class="o f-s"/>
+        <path d="M520 590 h28 M534 576 v28" class="ln-h"/>
+        <circle cx="30" cy="330" r="10" fill="none" class="o"/>
+        <path d="M250 40 h26 M263 27 v26" stroke="#FFE83D" stroke-width="4" stroke-linecap="round"/>
+      </g>
+
+      <g class="shop-body">
+        <path d="M10 552 H590" class="ln-h"/>
+        <rect x="60" y="250" width="300" height="302" class="o f-p"/>
+        <rect x="84" y="290" width="150" height="190" rx="8" class="o f-u"/>
+        <path d="M118 290 L96 330 M160 290 L96 372 M200 290 L110 400" stroke="#EAF0FF" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+        <path d="M84 406 H234" class="ln-h"/>
+        <ellipse cx="118" cy="392" rx="24" ry="13" class="o f-s"/><ellipse cx="170" cy="392" rx="24" ry="13" class="o f-s"/><ellipse cx="208" cy="396" rx="16" ry="9" class="o f-s"/>
+        <rect x="100" y="436" width="110" height="14" rx="7" transform="rotate(-8 155 443)" class="o f-s"/>
+        <rect x="258" y="330" width="80" height="222" rx="6" class="o f-a"/>
+        <circle cx="324" cy="448" r="5" class="f-s"/>
+        <rect x="266" y="354" width="64" height="28" rx="6" class="o f-s"/><text x="298" y="373" text-anchor="middle" class="t t-d" style="font-size:12px">ABIERTO</text>
+      </g>
+      <g aria-hidden="true">
+        <rect class="bar o f-s" style="--i:0" x="60" y="214" width="50" height="36" rx="5"/>
+        <rect class="bar o f-u" style="--i:1" x="110" y="192" width="50" height="58" rx="5"/>
+        <rect class="bar o f-s" style="--i:2" x="160" y="170" width="50" height="80" rx="5"/>
+        <rect class="bar o f-u" style="--i:3" x="210" y="146" width="50" height="104" rx="5"/>
+        <rect class="bar o f-s" style="--i:4" x="260" y="122" width="50" height="128" rx="5"/>
+        <rect class="bar o f-u" style="--i:5" x="310" y="94" width="50" height="156" rx="5"/>
+      </g>
+
+      <!-- móvil flotante -->
+      <g class="enter-phone"><g class="bob"><g transform="translate(398 20)">
+        <rect x="6" y="6" width="150" height="272" rx="28" class="f-s"/>
+        <rect width="150" height="272" rx="28" class="o f-a"/>
+        <rect x="9" y="9" width="132" height="254" rx="20" class="f-p"/>
+        <rect x="52" y="16" width="46" height="8" rx="4" class="f-h"/>
+        <text x="20" y="58" class="t">Tus clientes</text>
+        <path d="M20 222 H130" class="ln-h" style="stroke-opacity:.5"/>
+        <rect x="22" y="192" width="18" height="30" class="o f-u" style="stroke-width:2.5"/>
+        <rect x="46" y="174" width="18" height="48" class="o f-u" style="stroke-width:2.5"/>
+        <rect x="70" y="154" width="18" height="68" class="o f-u" style="stroke-width:2.5"/>
+        <rect x="94" y="124" width="18" height="98" class="o f-u" style="stroke-width:2.5"/>
+        <rect x="118" y="84" width="14" height="138" class="o f-s" style="stroke-width:2.5"/>
+        <path d="M24 176 L104 108 L124 70" fill="none" stroke="#FFE83D" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 9"/>
+        <rect x="20" y="236" width="70" height="8" rx="4" class="f-h" style="opacity:.35"/>
+      </g></g></g>
+
+      <!-- avisos -->
+      <g class="enter-pill" style="--d:1.9s"><g class="bob bob--2"><g transform="translate(282 132)">
+        <rect x="5" y="5" width="156" height="40" rx="20" class="f-s"/><rect width="156" height="40" rx="20" class="o f-h"/>
+        <circle cx="24" cy="20" r="8" class="f-u"/><text x="42" y="25" class="t t-d">Nuevo cliente</text>
+      </g></g></g>
+      <g class="enter-pill" style="--d:2.15s"><g class="bob"><g transform="translate(436 226)">
+        <rect x="5" y="5" width="154" height="40" rx="20" class="f-s"/><rect width="154" height="40" rx="20" class="o f-h"/>
+        <circle cx="24" cy="20" r="8" class="f-u"/><text x="42" y="25" class="t t-d">Nueva reserva</text>
+      </g></g></g>
+      <g class="enter-pill" style="--d:2.4s"><g class="bob bob--2"><g transform="translate(552 36)">
+        <circle r="26" class="o f-s"/><text y="7" text-anchor="middle" class="t t-d" style="font-size:20px;font-weight:800">+1</text>
+      </g></g></g>
+
+      <!-- panadera -->
+      <g class="enter-char"><g transform="translate(396 292)"><g class="breathe">
+        <g transform="translate(6 6)" class="f-s"><circle cx="60" cy="60" r="30"/><path d="M22 112 Q60 96 98 112 L110 216 L10 216 Z"/></g>
+        <rect x="30" y="214" width="24" height="44" rx="8" class="o f-a"/><rect x="68" y="214" width="24" height="44" rx="8" class="o f-a"/>
+        <ellipse cx="40" cy="262" rx="20" ry="9" class="o f-h"/><ellipse cx="80" cy="262" rx="20" ry="9" class="o f-h"/>
+        <path d="M26 124 Q8 160 16 194" class="lo"/><path d="M26 124 Q8 160 16 194" class="lf lf-u"/><circle cx="16" cy="199" r="9" class="o sk1"/>
+        <path d="M22 112 Q60 96 98 112 L110 216 L10 216 Z" class="o f-u"/>
+        <path d="M40 132 H80 L86 216 H34 Z" class="o f-h"/><path d="M44 132 L52 112 M76 132 L68 112" class="ln-h"/>
+        <circle cx="60" cy="24" r="14" class="o f-a"/>
+        <circle cx="60" cy="60" r="30" class="o sk1"/>
+        <path d="M32 54 Q34 28 60 28 Q86 28 88 54 Q74 40 60 42 Q46 40 32 54Z" class="o f-a"/>
+        <path d="M34 46 Q60 33 86 46" fill="none" stroke="#FFE83D" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="49" cy="64" r="3" class="f-a"/><circle cx="71" cy="64" r="3" class="f-a"/><path d="M50 76 Q60 85 70 76" class="ln-a"/>
+        <g class="arm">
+          <path d="M96 124 Q126 118 132 86" class="lo"/><path d="M96 124 Q126 118 132 86" class="lf lf-u"/>
+          <rect x="118" y="34" width="30" height="50" rx="8" class="o f-a"/><rect x="123" y="42" width="20" height="34" rx="4" class="f-p"/><circle cx="133" cy="52" r="4" class="f-s"/>
+          <circle cx="132" cy="88" r="9" class="o sk1"/>
+        </g>
+      </g></g></g>
+    </svg>
+  </div>
+</section>
+
+<!-- 3. BARRA DE CONFIANZA (ticket de caja) -->
+<section class="trust" aria-labelledby="trust-h">
+  <div class="wrap trust__grid">
+    <div class="trust__copy">
+      <h2 id="trust-h">Lo que importa se cuenta en clientes.</h2>
+      <p>Cada web y cada campaña se mide con algo sencillo: cuánta gente llama, escribe o entra por la puerta. Sin gráficos imposibles de entender.</p>
+    </div>
+    <!--
+      CIFRAS: sustituye cada marcador por el dato real. Para activar el contador animado
+      añade data-count="120" (y opcionalmente data-suffix="+" o data-decimals="1") y
+      reemplaza el texto por el número final, p. ej. <span class="count" data-count="120" data-suffix="+">120+</span>
+    -->
+    <div class="ticket js-print" data-ticket role="group" aria-label="Cifras de NovantIA Digital">
+      <p class="ticket__head"><strong>NovantIA Digital</strong>Ticket de resultados</p>
+      <dl>
+        <div class="t-row" style="--i:0"><dt>Negocios acompañados</dt><dd><span class="count ph">[DATO REAL]</span></dd></div>
+        <div class="t-row" style="--i:1"><dt>Webs entregadas</dt><dd><span class="count ph">[DATO REAL]</span></dd></div>
+        <div class="t-row" style="--i:2"><dt>Años de experiencia</dt><dd><span class="count ph">[DATO REAL]</span></dd></div>
+        <div class="t-row" style="--i:3"><dt>Valoración media de clientes</dt><dd><span class="count ph">[DATO REAL]</span></dd></div>
+      </dl>
+      <p class="ticket__foot" style="--i:4">Gracias por tu visita</p>
+      <div class="ticket__bars" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SERVICIOS: elemento firma -->
+<section class="services" id="servicios" aria-labelledby="svc-h">
+  <div class="wrap svc-intro">
+    <h2 id="svc-h">Lo que hacemos para que te encuentren y te llamen</h2>
+    <p>Tres servicios que se pueden contratar por separado o juntos. Haz scroll y mira cómo se ve en el móvil de tus clientes.</p>
+  </div>
+
+  <div class="svc-track" id="svc-track" style="--n:3">
+    <div class="svc-stage">
+      <div class="phone-frame" aria-hidden="true"></div>
+
+      <article class="svc is-active is-revealed" id="consultoria">
+        <div class="svc-copy">
+          <h3>Consultoría online</h3>
+          <p class="svc-benefit">Te decimos qué hacer primero y qué puede esperar. Revisamos tu negocio y tu presencia online y te damos un plan claro, en lenguaje de persona.</p>
+          <ul class="svc-list"><li>Sabes por dónde empezar y cuánto cuesta cada paso</li><li>Evitas gastar en cosas que hoy no te traen clientes</li></ul>
+          <a class="btn" href="#contacto" data-servicio="Consultoría online">Pide tu consulta</a>
+        </div>
+        <div class="svc-screen" style="--k:0" role="img" aria-label="Pantalla de móvil con una llamada de consultoría y una lista de tres puntos: qué quieres conseguir, qué ya te funciona y tu primer paso.">
+          <svg viewBox="0 0 270 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="270" height="540" class="f-p"/>
+            <ellipse cx="135" cy="130" rx="190" ry="150" fill="url(#glow)"/>
+            <text x="135" y="66" text-anchor="middle" class="t">Llamada de consulta</text>
+            <g class="in" style="--d:.1">
+              <circle class="ring" cx="135" cy="150" r="46" fill="none" stroke="#FFE83D" stroke-width="3"/>
+              <circle cx="135" cy="150" r="46" class="o f-u"/>
+              <g clip-path="url(#avclip)"><ellipse cx="135" cy="208" rx="42" ry="28" class="f-s"/><circle cx="135" cy="146" r="25" class="sk3"/><path d="M110 142 Q112 118 136 118 Q160 118 160 142 Q150 128 135 128 Q120 128 110 142Z" class="f-a"/><circle cx="127" cy="150" r="3" class="f-a"/><circle cx="144" cy="150" r="3" class="f-a"/><path d="M127 160 Q135 167 143 160" class="ln-a"/></g>
+            </g>
+            <g class="wave f-s" transform="translate(0 0)">
+              <rect style="--i:0" x="56" y="250" width="8" height="18" rx="4"/><rect style="--i:1" x="72" y="240" width="8" height="38" rx="4"/><rect style="--i:2" x="88" y="230" width="8" height="58" rx="4"/><rect style="--i:3" x="104" y="244" width="8" height="30" rx="4"/><rect style="--i:4" x="120" y="226" width="8" height="66" rx="4"/><rect style="--i:5" x="136" y="238" width="8" height="42" rx="4"/><rect style="--i:6" x="152" y="248" width="8" height="22" rx="4"/><rect style="--i:7" x="168" y="234" width="8" height="50" rx="4"/><rect style="--i:8" x="184" y="244" width="8" height="30" rx="4"/><rect style="--i:9" x="200" y="252" width="8" height="14" rx="4"/>
+            </g>
+            <g class="in" style="--d:.45"><rect x="18" y="304" width="234" height="40" rx="12" fill="#EAF0FF" fill-opacity=".08" stroke="#EAF0FF" stroke-opacity=".4" stroke-width="2"/><circle cx="40" cy="324" r="11" class="f-s"/><path class="draw" d="M34 324 l5 5 l9 -10" fill="none" stroke="#060A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:30"/><text x="62" y="329" class="t">Qué quieres conseguir</text></g>
+            <g class="in" style="--d:.75"><rect x="18" y="354" width="234" height="40" rx="12" fill="#EAF0FF" fill-opacity=".08" stroke="#EAF0FF" stroke-opacity=".4" stroke-width="2"/><circle cx="40" cy="374" r="11" class="f-s"/><path d="M34 374 l5 5 l9 -10" fill="none" stroke="#060A24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><text x="62" y="379" class="t">Qué ya te funciona</text></g>
+            <g class="in" style="--d:1.05"><rect x="18" y="404" width="234" height="40" rx="12" fill="#EAF0FF" fill-opacity=".08" stroke="#FFE83D" stroke-width="2.5"/><circle cx="40" cy="424" r="11" fill="none" stroke="#FFE83D" stroke-width="3"/><text x="62" y="429" class="t">Tu primer paso</text></g>
+            <circle cx="135" cy="492" r="26" class="o f-s"/><path d="M125 492 h20 M135 482 v20" stroke="#060A24" stroke-width="0"/><path d="M126 484 v16 M135 480 v24 M144 486 v12" stroke="#060A24" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="svc" id="diseno-web">
+        <div class="svc-copy">
+          <h3>Diseño web</h3>
+          <p class="svc-benefit">Una web que se ve bien en el móvil, carga rápido y hace que te llamen o te escriban con un toque. Con tu horario, tu dirección y tus botones de contacto desde el primer día.</p>
+          <ul class="svc-list"><li>Tus clientes encuentran lo que buscan sin dar vueltas</li><li>Tú puedes pedir cambios sin saber de tecnología</li></ul>
+          <a class="btn" href="#contacto" data-servicio="Diseño web">Pide presupuesto de tu web</a>
+        </div>
+        <div class="svc-screen" style="--k:1" role="img" aria-label="Pantalla de móvil con una web de negocio local que se construye: cabecera, título, botón de llamar, fotos, horario y cómo llegar.">
+          <svg viewBox="0 0 270 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="270" height="540" class="f-p"/>
+            <ellipse cx="200" cy="90" rx="180" ry="130" fill="url(#glow)"/>
+            <g class="in" style="--d:0"><rect x="16" y="46" width="238" height="40" rx="10" fill="#EAF0FF" fill-opacity=".08" stroke="#EAF0FF" stroke-opacity=".4" stroke-width="2"/><circle cx="36" cy="66" r="9" class="f-s"/><text x="52" y="71" class="t">Tu negocio</text><path d="M200 60 h38 M200 66 h38 M200 72 h38" class="ln-h"/></g>
+            <g class="in" style="--d:.2"><rect x="16" y="100" width="238" height="152" rx="14" class="o f-u"/><text x="30" y="136" class="t t-lg">Aquí estamos,</text><text x="30" y="162" class="t t-lg">ven a vernos.</text></g>
+            <g class="in tap" style="--d:.4"><rect x="30" y="184" width="100" height="36" rx="10" class="o f-s"/><text x="80" y="207" text-anchor="middle" class="t t-d">Llámanos</text><rect x="140" y="184" width="100" height="36" rx="10" fill="none" class="o"/><text x="190" y="207" text-anchor="middle" class="t">Escríbenos</text></g>
+            <g class="in" style="--d:.6"><rect x="16" y="266" width="115" height="92" rx="12" class="o f-a"/><circle cx="58" cy="304" r="16" class="f-s"/><path d="M80 340 l22 -34 l22 34z" class="f-u o" style="stroke-width:2.5"/></g>
+            <g class="in" style="--d:.75"><rect x="139" y="266" width="115" height="92" rx="12" class="o f-a"/><rect x="156" y="288" width="80" height="12" rx="6" class="f-h" style="opacity:.8"/><rect x="156" y="312" width="56" height="12" rx="6" class="f-u"/><rect x="156" y="334" width="68" height="12" rx="6" class="f-s"/></g>
+            <g class="in" style="--d:.9"><rect x="16" y="372" width="238" height="56" rx="12" fill="#EAF0FF" fill-opacity=".08" stroke="#EAF0FF" stroke-opacity=".4" stroke-width="2"/><circle cx="40" cy="400" r="7" class="f-s"/><text x="58" y="396" class="t">Abierto hoy</text><rect x="58" y="406" width="120" height="7" rx="3.5" class="f-h" style="opacity:.4"/></g>
+            <g class="in" style="--d:1.05"><rect x="16" y="440" width="238" height="64" rx="12" class="o f-h"/><path d="M44 462 a12 12 0 0 1 24 0 c0 10 -12 22 -12 22 s-12 -12 -12 -22z" class="f-u"/><circle cx="56" cy="462" r="4" class="f-h"/><text x="82" y="469" class="t t-d">Cómo llegar</text><rect x="82" y="478" width="110" height="7" rx="3.5" class="f-a" style="opacity:.35"/></g>
+            <g class="cursor"><path d="M0 0 L0 24 L7 18 L12 29 L17 27 L12 16 L21 16 Z" class="o f-h" style="stroke:#060A24;stroke-width:2"/></g>
+          </svg>
+        </div>
+      </article>
+
+      <article class="svc" id="marketing-digital">
+        <div class="svc-copy">
+          <h3>Marketing digital</h3>
+          <p class="svc-benefit">Que te encuentre la gente de tu zona justo cuando busca lo que vendes: ficha de Google, redes y campañas con un presupuesto que decides tú.</p>
+          <ul class="svc-list"><li>Más personas te ven cuando buscan cerca de ellas</li><li>Sabes qué euro trae llamadas y cuál no</li></ul>
+          <a class="btn" href="#contacto" data-servicio="Marketing digital">Pide tu plan de marketing</a>
+        </div>
+        <div class="svc-screen" style="--k:2" role="img" aria-label="Pantalla de móvil con una búsqueda local en la que aparece tu negocio, un gráfico de clientes que sube y avisos de nuevo cliente y mensaje de WhatsApp.">
+          <svg viewBox="0 0 270 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="270" height="540" class="f-p"/>
+            <ellipse cx="90" cy="400" rx="200" ry="150" fill="url(#glow)"/>
+            <g class="in" style="--d:0"><rect x="16" y="46" width="238" height="38" rx="19" fill="#EAF0FF" fill-opacity=".1" stroke="#EAF0FF" stroke-opacity=".5" stroke-width="2"/><circle cx="38" cy="64" r="7" fill="none" stroke="#EAF0FF" stroke-width="2.5"/><path d="M43 69 l6 6" class="ln-h"/><text x="58" y="69" class="t">peluquería cerca de mí</text></g>
+            <g class="in" style="--d:.2"><rect x="16" y="98" width="238" height="64" rx="14" class="o f-h"/><path d="M44 120 a13 13 0 0 1 26 0 c0 11 -13 24 -13 24 s-13 -13 -13 -24z" class="f-u"/><circle cx="57" cy="120" r="4.5" class="f-h"/><text x="84" y="124" class="t t-d">Tu negocio</text><text x="84" y="142" class="t t-d" style="font-weight:500;font-size:11.5px">Abierto ahora, cerca de ti</text></g>
+            <text x="18" y="204" class="t">Tus clientes</text>
+            <path d="M104 196 l10 -12 l10 12" fill="none" stroke="#FFE83D" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 222 V396 H254" fill="none" stroke="#A9B4E4" stroke-opacity=".55" stroke-width="2"/>
+            <path d="M18 380 L70 350 L120 360 L170 300 L215 270 L254 232 L254 396 L18 396 Z" fill="#2338FF" fill-opacity=".6"/>
+            <path class="draw" d="M18 380 L70 350 L120 360 L170 300 L215 270 L254 232" fill="none" stroke="#FFE83D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="ring" cx="254" cy="232" r="9" fill="none" stroke="#FFE83D" stroke-width="3"/><circle cx="254" cy="232" r="7" class="o f-s"/>
+            <g class="in" style="--d:1.3"><rect x="16" y="414" width="196" height="38" rx="19" class="o f-h"/><circle cx="37" cy="433" r="7" class="f-u"/><text x="52" y="438" class="t t-d">Nuevo cliente</text></g>
+            <g class="in" style="--d:1.7"><rect x="40" y="462" width="214" height="38" rx="19" class="o f-s"/><circle cx="61" cy="481" r="7" class="f-a"/><text x="76" y="486" class="t t-d">Mensaje por WhatsApp</text></g>
+          </svg>
+        </div>
+      </article>
+
+      <nav class="svc-nav" aria-label="Ir a un servicio">
+        <button type="button" data-go="0" aria-current="true">Consultoría online</button>
+        <button type="button" data-go="1" aria-current="false">Diseño web</button>
+        <button type="button" data-go="2" aria-current="false">Marketing digital</button>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CÓMO TRABAJAMOS -->
+<section class="process" id="metodo" aria-labelledby="proc-h">
+  <div class="wrap proc">
+    <div class="proc__side">
+      <h2 id="proc-h">Cómo trabajamos, sin sorpresas.</h2>
+      <p>Cuatro pasos y tú sabes en cuál estás en cada momento.</p>
+      <svg class="duo" viewBox="0 0 340 300" role="img" aria-label="Ilustración: un peluquero con unas tijeras y un ferretero con una llave inglesa charlan, cada uno con su móvil.">
+        <use href="#c-pel" x="0" y="20" width="150" height="270"/>
+        <use href="#c-fer" x="186" y="20" width="150" height="270"/>
+        <g transform="translate(106 8)"><rect x="4" y="4" width="128" height="44" rx="16" class="f-s"/><rect width="128" height="44" rx="16" class="o f-h"/><path d="M30 44 l-10 18 l28 -18z" class="o f-h" style="stroke-width:0"/><text x="64" y="28" text-anchor="middle" class="t t-d" style="font-size:14px">¿Y tu web?</text></g>
+      </svg>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="step__n" aria-hidden="true">1</span><h3>Hablamos</h3><p>Una llamada o un WhatsApp de unos minutos. Nos cuentas qué vendes, a quién y qué te quita el sueño. Nosotros escuchamos y preguntamos lo justo.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">2</span><h3>Te proponemos un plan</h3><p>Te explicamos qué haremos, en qué orden y cuánto cuesta, por escrito y en lenguaje claro. Sin letra pequeña.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">3</span><h3>Lo construimos</h3><p>Diseñamos tu web o ponemos en marcha tu marketing. Te enseñamos los avances por el camino para que opines antes de publicar.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">4</span><h3>Medimos y mejoramos</h3><p>Miramos juntos qué trae llamadas y mensajes, y ajustamos. Tu web y tu marketing se afinan con datos, no con corazonadas.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. PROYECTOS -->
+<section class="cases" id="casos" aria-labelledby="cases-h">
+  <div class="wrap">
+    <div class="cases__head">
+      <h2 id="cases-h">Proyectos</h2>
+      <p><span class="ph">[A completar con los primeros proyectos reales]</span> Aquí irá cada negocio, lo que hicimos y qué cambió para él.</p>
+    </div>
+    <div class="cases__grid">
+      <figure class="case case--web">
+        <div class="frame frame--web" role="img" aria-label="Espacio reservado para la captura de la web del proyecto 1"><div class="frame__ph"><span>[PROYECTO 1]</span><span>Captura de la web</span></div></div>
+        <figcaption><strong><span class="ph">[Nombre del negocio]</span></strong><span class="ph">[Qué hicimos]</span> <span class="ph">[Resultado: DATO REAL]</span></figcaption>
+      </figure>
+      <figure class="case case--mob">
+        <div class="frame frame--mob" role="img" aria-label="Espacio reservado para la captura en móvil del proyecto 2"><div class="frame__ph"><span>[PROYECTO 2]</span><span>Captura en móvil</span></div></div>
+        <figcaption><strong><span class="ph">[Nombre del negocio]</span></strong><span class="ph">[Qué hicimos]</span></figcaption>
+      </figure>
+      <figure class="case case--card">
+        <div class="frame frame--card" role="img" aria-label="Espacio reservado para la imagen del proyecto 3"><div class="frame__ph"><span>[PROYECTO 3]</span><span>Imagen o logo</span></div></div>
+        <figcaption><strong><span class="ph">[Nombre del negocio]</span></strong><span class="ph">[Qué hicimos]</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 7. PREGUNTAS FRECUENTES -->
+<section class="faq" id="preguntas" aria-labelledby="faq-h">
+  <div class="wrap faq__in">
+    <div class="faq__side">
+      <h2 id="faq-h">Lo que suelen preguntarnos</h2>
+      <p>Si tu duda no está aquí, escríbenos y te contestamos con palabras normales.</p>
+      <a class="btn btn--ghost" href="https://wa.me/34698546713?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20NovantIA%20Digital." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.3 18.7L4 20z"/></svg>
+        Pregunta por WhatsApp<span class="sr"> (se abre en una pestaña nueva)</span>
+      </a>
+    </div>
+    <div class="chat">
+      <details class="qa"><summary><span>¿Cuánto cuesta una web para mi negocio?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>Depende de lo que necesites. Tras una primera conversación te enviamos el presupuesto por escrito, antes de empezar a trabajar. <span class="ph">[CONFIRMAR: precio orientativo o "desde"]</span></p></div></details>
+      <details class="qa"><summary><span>No entiendo de tecnología, ¿me vais a liar?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>No. Hablamos claro y sin jerga. Tú nos cuentas cómo funciona tu negocio y nosotros nos encargamos de lo técnico.</p></div></details>
+      <details class="qa"><summary><span>¿Cuánto tarda en estar lista mi web?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>Te damos un plazo concreto en el plan, según lo que incluya. <span class="ph">[CONFIRMAR: plazo típico]</span></p></div></details>
+      <details class="qa"><summary><span>No tengo web, ni redes, ni nada. ¿Podéis empezar de cero?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>Sí. En la primera consulta vemos qué tienes y qué te falta, y te proponemos por dónde empezar para que no te agobies.</p></div></details>
+      <details class="qa"><summary><span>¿Trabajáis solo con negocios de mi ciudad?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>Trabajamos online, por teléfono, WhatsApp y videollamada, con negocios locales y pymes de España. No hace falta que nos veamos en persona.</p></div></details>
+      <details class="qa"><summary><span>¿Qué hacéis con mis datos si os escribo?</span><span class="plus" aria-hidden="true"></span></summary>
+        <div class="reply"><p>Los usamos solo para responder a tu consulta. Puedes ver todos los detalles en la <a href="#privacidad" data-legal="privacidad">política de privacidad</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CONTACTO -->
+<section class="contact" id="contacto" aria-labelledby="contact-h">
+  <div class="wrap contact__grid">
+    <div class="contact__info">
+      <h2 id="contact-h">Pide tu consulta</h2>
+      <p class="lead">Cuéntanos de qué vive tu negocio y qué te gustaría conseguir. Elige la vía que te venga mejor.</p>
+      <ul class="vias">
+        <li><span>Llama</span><a class="big" href="tel:+34698546713">+34 698 54 67 13</a></li>
+        <li><span>O a este otro número</span><a class="big" href="tel:+34652274156">+34 652 27 41 56</a></li>
+        <li><span>WhatsApp</span>
+          <div class="wa-row">
+            <a class="btn btn--sm btn--light" href="https://wa.me/34698546713?text=Hola%2C%20quiero%20pedir%20una%20consulta%20con%20NovantIA%20Digital." target="_blank" rel="noopener">WhatsApp 698 54 67 13<span class="sr"> (se abre en una pestaña nueva)</span></a>
+            <a class="btn btn--sm btn--light" href="https://wa.me/34652274156?text=Hola%2C%20quiero%20pedir%20una%20consulta%20con%20NovantIA%20Digital." target="_blank" rel="noopener">WhatsApp 652 27 41 56<span class="sr"> (se abre en una pestaña nueva)</span></a>
+          </div></li>
+        <li><span>Email</span><a class="mail" href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a></li>
+      </ul>
+      <svg class="talk" viewBox="0 0 300 290" role="img" aria-label="Ilustración: una panadera sonríe con su móvil en la mano y un mensaje que dice ¿Hablamos?">
+        <use href="#c-pan" x="10" y="14" width="150" height="270"/>
+        <g transform="translate(150 20)"><rect x="5" y="5" width="132" height="50" rx="16" class="f-s"/><rect width="132" height="50" rx="16" class="o f-h"/><path d="M18 50 l-10 20 l30 -20z" class="f-h"/><text x="66" y="31" text-anchor="middle" class="t t-d" style="font-size:15px">¿Hablamos?</text></g>
+      </svg>
+    </div>
+
+    <!--
+      FORMULARIO: sin backend. Para activarlo:
+      1) Crea un formulario en https://formspree.io y copia su ID.
+      2) Sustituye TU_ID en action y en data-endpoint por ese ID (por ejemplo https://formspree.io/f/abcdwxyz).
+      El campo "_gotcha" es un señuelo anti-spam. No lo quites.
+    -->
+    <form class="form" id="form-contacto" action="https://formspree.io/f/TU_ID" data-endpoint="https://formspree.io/f/TU_ID" method="POST" novalidate>
+      <div class="form-fields">
+        <h3>Escríbenos</h3>
+        <p>Cuatro datos y listo. Te respondemos por email o por teléfono.</p>
+
+        <div class="field"><label for="f-nombre">Tu nombre</label>
+          <input type="text" id="f-nombre" name="nombre" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-nombre" placeholder="Por ejemplo, Marta">
+          <p class="err" id="e-nombre"></p></div>
+
+        <div class="field"><label for="f-email">Tu email</label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required maxlength="120" aria-describedby="e-email" placeholder="nombre@correo.es">
+          <p class="err" id="e-email"></p></div>
+
+        <div class="field"><label for="f-tel">Tu teléfono <span class="opt">(opcional)</span></label>
+          <input type="tel" id="f-tel" name="telefono" autocomplete="tel" maxlength="20" inputmode="tel" aria-describedby="e-tel" placeholder="612 345 678">
+          <p class="err" id="e-tel"></p></div>
+
+        <div class="field"><label for="f-mensaje">Cuéntanos tu caso</label>
+          <textarea id="f-mensaje" name="mensaje" required minlength="10" maxlength="1000" aria-describedby="e-mensaje c-mensaje" placeholder="Qué vendes, dónde estás y qué te gustaría conseguir"></textarea>
+          <span class="count-c" id="c-mensaje">0 / 1000</span>
+          <p class="err" id="e-mensaje"></p></div>
+
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="field"><label class="check" for="f-consent">
+          <input type="checkbox" id="f-consent" name="consentimiento" value="si" required aria-describedby="e-consent">
+          <span class="box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+          <span class="txt">He leído la <a href="#privacidad" data-legal="privacidad">política de privacidad</a> y acepto que NovantIA Digital use mis datos para responder a mi consulta.</span></label>
+          <p class="err" id="e-consent"></p></div>
+
+        <button class="btn" type="submit" id="f-submit"><span>Enviar mi consulta</span><span class="spin" aria-hidden="true"></span></button>
+        <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+      </div>
+      <div class="form-ok" role="status" aria-live="polite" tabindex="-1" id="form-ok">
+        <h3>Recibido, gracias</h3>
+        <p>Hemos recibido tu mensaje. Te escribiremos o te llamaremos lo antes posible. Si es urgente, llámanos al <a href="tel:+34698546713">+34 698 54 67 13</a>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- 9. PIE -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <a class="brand" href="#inicio" aria-label="NovantIA Digital, volver arriba">
+          <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0D1442" stroke="#EAF0FF" stroke-width="2.5"/><rect x="6" y="19" width="5.5" height="9" fill="#2338FF" stroke="#EAF0FF" stroke-width="2"/><rect x="14.25" y="13" width="5.5" height="15" fill="#FFE83D" stroke="#EAF0FF" stroke-width="2"/><rect x="22.5" y="6" width="5.5" height="22" fill="#2338FF" stroke="#EAF0FF" stroke-width="2"/></svg>
+          <span><b>NovantIA</b><i>Digital</i></span>
+        </a>
+        <p class="foot__tag">El estudio digital donde tu negocio local se vuelve futuro.</p>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a></li>
+          <li><a href="tel:+34698546713">+34 698 54 67 13</a></li>
+          <li><a href="tel:+34652274156">+34 652 27 41 56</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Información legal</h2>
+        <ul>
+          <li><a href="#privacidad" data-legal="privacidad">Política de privacidad</a></li>
+          <li><a href="#aviso-legal" data-legal="aviso-legal">Aviso legal</a></li>
+          <li><a href="#cookies" data-legal="cookies">Política de cookies</a></li>
+          <li><button type="button" class="linkbtn" id="open-cookies">Configurar cookies</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bot">
+      <span>© <span id="year">2026</span> NovantIA Digital</span>
+      <span>Titular: <span class="ph">[razón social/titular]</span></span>
+      <span>NIF/CIF: <span class="ph">[NIF/CIF]</span></span>
+      <span>Domicilio: <span class="ph">[domicilio]</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Banner de cookies -->
+<div class="cookie" id="cookie" role="dialog" aria-labelledby="ck-t" aria-describedby="ck-d" hidden>
+  <h2 id="ck-t">Tú decides sobre las cookies</h2>
+  <p id="ck-d">Usamos solo lo imprescindible para que la web funcione. Si quieres, puedes permitir también cookies de analítica y de marketing. Más información en la <a href="#cookies" data-legal="cookies">política de cookies</a>.</p>
+  <div class="cookie__opts" id="ck-opts" hidden>
+    <label class="tog"><input type="checkbox" checked disabled><span>Técnicas (necesarias)<small>Guardan tu elección sobre cookies. Siempre activas.</small></span></label>
+    <label class="tog"><input type="checkbox" id="ck-an"><span>Analítica<small>Nos ayudan a entender cómo se usa la web.</small></span></label>
+    <label class="tog"><input type="checkbox" id="ck-mk"><span>Marketing<small>Permiten mostrarte publicidad relacionada.</small></span></label>
+  </div>
+  <div class="cookie__btns">
+    <button type="button" class="btn btn--sm btn--light" id="ck-reject">Rechazar todo</button>
+    <button type="button" class="btn btn--sm" id="ck-accept">Aceptar todo</button>
+    <button type="button" class="linkbtn" id="ck-config" aria-expanded="false" aria-controls="ck-opts">Configurar</button>
+    <button type="button" class="btn btn--sm btn--light" id="ck-save" hidden>Guardar mi selección</button>
+  </div>
+</div>
+
+<!-- Textos legales (orientativos: deben ser revisados por un profesional) -->
+<dialog class="legal" id="dlg-privacidad" aria-labelledby="t-privacidad">
+  <div class="legal__box">
+    <div class="legal__bar"><h2 id="t-privacidad">Política de privacidad</h2><button type="button" class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <p class="warn">Texto orientativo. Debe revisarlo un profesional jurídico antes de publicar la web.</p>
+    <p>Esta política explica cómo trata NovantIA Digital tus datos personales, de acuerdo con el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+    <h3>1. Responsable del tratamiento</h3>
+    <ul>
+      <li>Titular: <span class="ph">[razón social/titular]</span></li>
+      <li>NIF/CIF: <span class="ph">[NIF/CIF]</span></li>
+      <li>Domicilio: <span class="ph">[domicilio]</span></li>
+      <li>Email de contacto: <a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a></li>
+      <li>Teléfonos: +34 698 54 67 13 y +34 652 27 41 56</li>
+    </ul>
+    <h3>2. Qué datos tratamos</h3>
+    <p>Los que nos facilitas al usar el formulario (nombre, email, teléfono si lo indicas y el contenido de tu mensaje) y los que nos des por teléfono, WhatsApp o email. Además, al cargar la web, el proveedor de fuentes tipográficas (Google Fonts) recibe tu dirección IP para poder servirlas.</p>
+    <h3>3. Para qué los usamos</h3>
+    <p>Para atender tu consulta y ponernos en contacto contigo. No te enviaremos publicidad si no lo pides o no lo consientes de forma separada.</p>
+    <h3>4. Base jurídica</h3>
+    <p>Tu consentimiento (artículo 6.1.a del RGPD), que das al marcar la casilla y enviar el formulario, y la aplicación de medidas precontractuales a petición tuya (artículo 6.1.b).</p>
+    <h3>5. Cuánto tiempo los conservamos</h3>
+    <p>Mientras atendemos tu consulta y, después, durante el plazo necesario para atender posibles responsabilidades. <span class="ph">[plazo de conservación]</span></p>
+    <h3>6. A quién se los comunicamos</h3>
+    <p>No cedemos tus datos a terceros salvo obligación legal. Para prestar el servicio utilizamos proveedores que actúan por nuestra cuenta, como el servicio de formularios <span class="ph">[Formspree u otro servicio]</span> y el alojamiento web <span class="ph">[proveedor de hosting]</span>. Si alguno está fuera del Espacio Económico Europeo, la transferencia se ampara en garantías adecuadas. <span class="ph">[confirmar garantías]</span></p>
+    <h3>7. Tus derechos</h3>
+    <p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, y retirar tu consentimiento en cualquier momento, escribiendo a <a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a> e indicando el derecho que quieres ejercer. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</p>
+    <h3>8. Menores</h3>
+    <p>Si eres menor de 14 años necesitas el consentimiento de tus padres o tutores para facilitarnos tus datos.</p>
+    <h3>9. Cambios</h3>
+    <p>Podemos actualizar esta política. La versión vigente es siempre la publicada en esta web.</p>
+  </div>
+</dialog>
+
+<dialog class="legal" id="dlg-aviso-legal" aria-labelledby="t-aviso">
+  <div class="legal__box">
+    <div class="legal__bar"><h2 id="t-aviso">Aviso legal</h2><button type="button" class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <p class="warn">Texto orientativo. Debe revisarlo un profesional jurídico antes de publicar la web.</p>
+    <h3>1. Datos del titular</h3>
+    <p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de:</p>
+    <ul>
+      <li>Titular: <span class="ph">[razón social/titular]</span></li>
+      <li>NIF/CIF: <span class="ph">[NIF/CIF]</span></li>
+      <li>Domicilio: <span class="ph">[domicilio]</span></li>
+      <li>Email: <a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a></li>
+      <li>Teléfonos: +34 698 54 67 13 y +34 652 27 41 56</li>
+      <li>Datos registrales, si procede: <span class="ph">[inscripción en el Registro Mercantil]</span></li>
+    </ul>
+    <h3>2. Objeto y condiciones de uso</h3>
+    <p>Esta web presenta los servicios de consultoría online, diseño web y marketing digital de NovantIA Digital. Al navegar por ella aceptas usarla de forma lícita y sin dañar la web ni a terceros.</p>
+    <h3>3. Propiedad intelectual</h3>
+    <p>Los textos, diseños, ilustraciones, código y marcas de esta web pertenecen a su titular o se usan con autorización. No se pueden copiar, distribuir ni modificar sin permiso.</p>
+    <h3>4. Responsabilidad</h3>
+    <p>Procuramos que la información sea correcta y esté actualizada, pero no garantizamos que no haya errores ni interrupciones. No nos hacemos responsables de los contenidos de webs de terceros enlazadas.</p>
+    <h3>5. Protección de datos y cookies</h3>
+    <p>Consulta la <a href="#privacidad" data-legal="privacidad">política de privacidad</a> y la <a href="#cookies" data-legal="cookies">política de cookies</a>.</p>
+    <h3>6. Legislación aplicable</h3>
+    <p>Este aviso se rige por la legislación española. Si eres consumidor, los conflictos se resolverán ante los juzgados de tu domicilio. En otro caso, ante <span class="ph">[juzgados y tribunales de la ciudad del titular]</span>.</p>
+  </div>
+</dialog>
+
+<dialog class="legal" id="dlg-cookies" aria-labelledby="t-cookies">
+  <div class="legal__box">
+    <div class="legal__bar"><h2 id="t-cookies">Política de cookies</h2><button type="button" class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>
+    <p class="warn">Texto orientativo. Debe revisarlo un profesional jurídico antes de publicar la web.</p>
+    <h3>1. Qué son</h3>
+    <p>Las cookies y tecnologías similares guardan información en tu dispositivo cuando visitas una web. Esta política cumple el artículo 22.2 de la LSSI-CE y el RGPD.</p>
+    <h3>2. Qué usamos</h3>
+    <table>
+      <thead><tr><th>Nombre</th><th>Tipo</th><th>Para qué</th><th>Duración</th></tr></thead>
+      <tbody>
+        <tr><td>nv_consent (almacenamiento local)</td><td>Técnica, propia</td><td>Guardar tu elección sobre cookies</td><td>12 meses</td></tr>
+        <tr><td>Analítica</td><td>No se usa por ahora</td><td><span class="ph">[indicar proveedor, finalidad y duración si se añade]</span></td><td>-</td></tr>
+        <tr><td>Marketing</td><td>No se usa por ahora</td><td><span class="ph">[indicar proveedor, finalidad y duración si se añade]</span></td><td>-</td></tr>
+      </tbody>
+    </table>
+    <p>Las cookies de analítica y de marketing, si se incorporan, solo se activarán si las aceptas.</p>
+    <h3>3. Fuentes de Google</h3>
+    <p>La web carga tipografías desde Google Fonts. No instala cookies, pero Google recibe tu dirección IP para servirlas.</p>
+    <h3>4. Cómo cambiar tu elección</h3>
+    <p>Puedes cambiarla cuando quieras desde el botón «Configurar cookies» del pie de la web, o borrando los datos del sitio en tu navegador. También puedes bloquear o eliminar cookies desde los ajustes de tu navegador.</p>
+    <p><button type="button" class="btn btn--sm" id="open-cookies-2">Configurar cookies</button></p>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  'use strict';
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function(s,c){return (c||document).querySelector(s)};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+  /* Año del pie */
+  $('#year').textContent = new Date().getFullYear();
+
+  /* Cabecera sólida al hacer scroll */
+  var header = $('#cabecera');
+  function onHead(){header.classList.toggle('is-scrolled', window.scrollY > 12)}
+  onHead(); window.addEventListener('scroll', onHead, {passive:true});
+
+  /* Ticket: se imprime una vez y anima los contadores con datos reales */
+  var ticket = $('[data-ticket]');
+  function runCounters(){
+    $$('.count', ticket).forEach(function(el){
+      var target = parseFloat(el.getAttribute('data-count'));
+      if(isNaN(target)) return; /* con [DATO REAL] no hay nada que animar */
+      var dec = parseInt(el.getAttribute('data-decimals')||'0',10), suf = el.getAttribute('data-suffix')||'';
+      var fmt = function(v){return v.toLocaleString('es-ES',{minimumFractionDigits:dec,maximumFractionDigits:dec})+suf};
+      if(reduce){el.textContent = fmt(target); return;}
+      var t0 = null, dur = 1400;
+      function step(t){
+        if(t0===null) t0 = t;
+        var p = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-p,3);
+        el.textContent = fmt(target*e);
+        if(p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(ticket){
+    if(reduce || !('IntersectionObserver' in window)){ticket.classList.remove('js-print'); runCounters();}
+    else{
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ticket.classList.add('is-printing'); setTimeout(runCounters,500); io.disconnect();}
+        });
+      },{threshold:.35});
+      io.observe(ticket);
+    }
+  }
+
+  /* Servicios: el móvil queda fijo y las pantallas cambian con el scroll */
+  var track = $('#svc-track');
+  if(track && document.documentElement.classList.contains('js-pin')){
+    var svcs = $$('.svc', track), btns = $$('[data-go]', track), n = svcs.length, idx = -1, tick = false;
+    var span = function(){return track.offsetHeight - window.innerHeight};
+    var trackTop = function(){return track.getBoundingClientRect().top + window.scrollY};
+    function calc(){
+      var p = Math.min(1, Math.max(0, -track.getBoundingClientRect().top / Math.max(1,span())));
+      var i = Math.min(n-1, Math.floor(p*n));
+      if(i !== idx){
+        idx = i;
+        svcs.forEach(function(s,k){s.classList.toggle('is-active',k===i); s.classList.toggle('is-revealed',k<=i)});
+        btns.forEach(function(b,k){b.setAttribute('aria-current', k===i ? 'true':'false')});
+      }
+      btns.forEach(function(b,k){b.style.setProperty('--f', Math.min(1,Math.max(0,p*n-k)).toFixed(3))});
+      tick = false;
+    }
+    function req(){ if(!tick){tick = true; requestAnimationFrame(calc);} }
+    function goTo(k){ window.scrollTo({top: trackTop() + (k+.5)/n*span(), behavior: 'smooth'}); }
+    window.addEventListener('scroll', req, {passive:true});
+    window.addEventListener('resize', req);
+    btns.forEach(function(b){b.addEventListener('click', function(){goTo(parseInt(b.getAttribute('data-go'),10))})});
+    svcs.forEach(function(s,k){s.addEventListener('focusin', function(){ if(!s.classList.contains('is-active')) goTo(k); })});
+    calc();
+  }
+
+  /* Botones de servicio: rellenan el mensaje del formulario */
+  $$('[data-servicio]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = $('#f-mensaje');
+      if(t && !t.value.trim()){t.value = 'Hola, me interesa: ' + a.getAttribute('data-servicio') + '. '; updateCount();}
+    });
+  });
+
+  /* Formulario con validación en tiempo real */
+  var form = $('#form-contacto');
+  var msgEl = $('#f-mensaje'), cnt = $('#c-mensaje');
+  function updateCount(){ if(cnt && msgEl) cnt.textContent = msgEl.value.length + ' / 1000'; }
+  if(msgEl) msgEl.addEventListener('input', updateCount);
+  var rules = {
+    'f-nombre': function(v){ return v.trim().length >= 2 ? '' : 'Escribe tu nombre, con al menos 2 letras.'; },
+    'f-email': function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? '' : 'Revisa tu email: tiene que ser algo como nombre@correo.es.'; },
+    'f-tel': function(v){ v = v.trim(); if(!v) return ''; return /^(?:\+34|0034)?[\s.-]?[6-9]\d{2}[\s.-]?\d{3}[\s.-]?\d{3}$/.test(v) ? '' : 'Si añades un teléfono, escribe 9 cifras, por ejemplo 612 345 678.'; },
+    'f-mensaje': function(v){ return v.trim().length >= 10 ? '' : 'Cuéntanos un poco más, con al menos 10 caracteres.'; },
+    'f-consent': function(v,el){ return el.checked ? '' : 'Marca la casilla para que podamos responderte. Puedes leer antes la política de privacidad.'; }
+  };
+  var errId = {'f-nombre':'e-nombre','f-email':'e-email','f-tel':'e-tel','f-mensaje':'e-mensaje','f-consent':'e-consent'};
+  function check(id, show){
+    var el = document.getElementById(id), err = document.getElementById(errId[id]);
+    var m = rules[id](el.value, el);
+    if(show){
+      err.textContent = m; err.classList.toggle('is-on', !!m);
+      el.setAttribute('aria-invalid', m ? 'true' : 'false');
+      if(el.type !== 'checkbox') el.setAttribute('data-ok', (!m && el.value.trim()) ? 'true' : 'false');
+    }
+    return !m;
+  }
+  if(form){
+    var touched = {};
+    Object.keys(rules).forEach(function(id){
+      var el = document.getElementById(id);
+      el.addEventListener('blur', function(){ touched[id] = true; check(id,true); });
+      el.addEventListener(el.type==='checkbox' ? 'change' : 'input', function(){ if(touched[id] || el.getAttribute('aria-invalid')==='true' || el.type==='checkbox'){touched[id]=true; check(id,true);} });
+    });
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var firstBad = null;
+      Object.keys(rules).forEach(function(id){ touched[id] = true; if(!check(id,true) && !firstBad) firstBad = id; });
+      var out = $('#form-msg'); out.className = 'form-msg'; out.textContent = '';
+      if(firstBad){ document.getElementById(firstBad).focus(); return; }
+      if($('.hp', form).value){ return; } /* señuelo anti-spam */
+      var endpoint = form.getAttribute('data-endpoint') || '';
+      var btn = $('#f-submit');
+      if(!endpoint || endpoint.indexOf('TU_ID') !== -1){
+        out.className = 'form-msg is-on is-bad';
+        out.innerHTML = 'Este formulario todavía no está conectado. Escríbenos a <a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a> o llama al <a href="tel:+34698546713">+34 698 54 67 13</a>.';
+        return;
+      }
+      btn.disabled = true; btn.classList.add('is-loading');
+      fetch(endpoint, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)})
+        .then(function(r){ if(!r.ok) throw new Error('http'); form.classList.add('is-sent'); var ok = $('#form-ok'); ok.focus(); form.reset(); updateCount(); })
+        .catch(function(){
+          out.className = 'form-msg is-on is-bad';
+          out.innerHTML = 'No hemos podido enviar tu mensaje. Inténtalo de nuevo o escríbenos a <a href="mailto:contacto@novantiadigital.es">contacto@novantiadigital.es</a>.';
+        })
+        .then(function(){ btn.disabled = false; btn.classList.remove('is-loading'); });
+    });
+  }
+
+  /* Textos legales en ventana modal */
+  function openLegal(id){
+    var d = document.getElementById('dlg-' + id);
+    if(!d) return;
+    if(!d.open) d.showModal();
+    try{ history.replaceState(null,'','#'+id); }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-legal]');
+    if(a){ e.preventDefault(); $$('dialog[open]').forEach(function(d){d.close()}); openLegal(a.getAttribute('data-legal')); return; }
+    var c = e.target.closest('[data-close]');
+    if(c){ c.closest('dialog').close(); }
+  });
+  $$('dialog.legal').forEach(function(d){
+    d.addEventListener('click', function(e){ if(e.target === d) d.close(); });
+    d.addEventListener('close', function(){ try{ if(/^#(privacidad|aviso-legal|cookies)$/.test(location.hash)) history.replaceState(null,'',location.pathname+location.search); }catch(e){} });
+  });
+  var h = location.hash.slice(1);
+  if(/^(privacidad|aviso-legal|cookies)$/.test(h)) openLegal(h);
+
+  /* Banner de cookies: guarda la elección, no carga nada opcional sin permiso */
+  var KEY = 'nv_consent';
+  var bar = $('#cookie'), opts = $('#ck-opts'), cfg = $('#ck-config'), save = $('#ck-save');
+  function read(){ try{ var c = JSON.parse(localStorage.getItem(KEY)); if(c && c.v === 1 && Date.now() - c.ts < 365*864e5) return c; }catch(e){} return null; }
+  function applyConsent(c){
+    window.nvConsent = c;
+    document.dispatchEvent(new CustomEvent('nv:consent',{detail:c}));
+    /* Aquí se cargaría la analítica o el marketing, solo si c.analytics o c.marketing son true. */
+  }
+  function store(an, mk){
+    var c = {v:1, analytics:!!an, marketing:!!mk, ts:Date.now()};
+    try{ localStorage.setItem(KEY, JSON.stringify(c)); }catch(e){}
+    applyConsent(c); bar.hidden = true;
+  }
+  function showBar(expanded){
+    var c = read() || {analytics:false, marketing:false};
+    $('#ck-an').checked = !!c.analytics; $('#ck-mk').checked = !!c.marketing;
+    opts.hidden = !expanded; save.hidden = !expanded; cfg.setAttribute('aria-expanded', expanded ? 'true':'false');
+    bar.hidden = false;
+    if(expanded) $('#ck-an').focus();
+  }
+  $('#ck-accept').addEventListener('click', function(){ store(true,true); });
+  $('#ck-reject').addEventListener('click', function(){ store(false,false); });
+  save.addEventListener('click', function(){ store($('#ck-an').checked, $('#ck-mk').checked); });
+  cfg.addEventListener('click', function(){ showBar(opts.hidden); });
+  $('#open-cookies').addEventListener('click', function(){ showBar(true); });
+  var oc2 = $('#open-cookies-2'); if(oc2) oc2.addEventListener('click', function(){ $('#dlg-cookies').close(); showBar(true); });
+  var saved = read();
+  if(saved) applyConsent(saved); else bar.hidden = false;
+})();
+</script>
+</body>
+</html>
